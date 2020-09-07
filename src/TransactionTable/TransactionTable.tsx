@@ -14,14 +14,12 @@ type TransactionTableProps = {
     transactions: Transaction[]
 }
 
-export default function TransactionTable(props: TransactionTableProps) {
-    const { transactions } = props;
-    const transactionElements = transactions.map(({ amount, date, type, description }, idx) => {
+export default function TransactionTable({transactions}: TransactionTableProps) {
+    const transactionElements = transactions.map(({ amount, date, type }, idx) => {
         return <tr key={idx}>
           <td>{date.toLocaleString()}</td>
           <td>{amount}</td>
           <td>{type === 'DEPOSIT' ? 'Deposito': 'Retiro'}</td>
-          <td>{description}</td>
         </tr>
       })
     return <table className="table is-fullwidth">

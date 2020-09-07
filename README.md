@@ -4,6 +4,7 @@
 * [Recursos de TS junto a react](Resources.md)
 * [Video del Live](https://youtu.be/mh3-Js8a9G4?t=141)
 * [Presentacion del Live](https://slides.com/guitart/react-ts)
+* [Developer RoadMap](https://github.com/kamranahmedse/developer-roadmap)
 
 
 ## React Read Me
